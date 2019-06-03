@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     browserSync = require('browser-sync').create(),
@@ -7,8 +9,10 @@ var gulp        = require('gulp'),
     uglify      = require('gulp-uglify'),
     cssnano     = require('gulp-cssnano'),
     sourcemaps  = require('gulp-sourcemaps'),
-    imagemin    = require('gulp-imagemin');
+    imagemin    = require('gulp-imagemin'),
     npmDist     = require('gulp-npm-dist');
+
+sass.compiler = require('node-sass');
 
 var cfg = {
   'src': 'src/',

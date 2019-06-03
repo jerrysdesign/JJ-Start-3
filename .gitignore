@@ -36,3 +36,4 @@ dist
 ## Todo
 app/dist/humans.txt
 app/dist/robots.txt
+/package-lock.json
